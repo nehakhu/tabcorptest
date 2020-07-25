@@ -1,0 +1,22 @@
+{
+  "name": "tabcorp-test",
+  "description": "tabcorp test",
+  "repository": "https://github.com/nehakhu/tabcorptest",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "chai": "~3.5.0",
+    "chai-as-promised": "~6.0.0",
+    "cucumber": "^6.0.5",
+    "protractor": "^7.0.0",
+    "protractor-cucumber-framework": "^6.2.1",
+    "shx": "^0.3.2",
+    "typescript": "^3.9.7"
+  },
+  "scripts": {
+    "start-webdriver": "webdriver-manager start",
+    "e2e": "shx rm -rf dist && tsc && ./node_modules/protractor/bin/webdriver-manager update && ./node_modules/protractor/bin/protractor ./dist/e2e/config/protractor.conf.js"
+  },
+  "dependencies": {
+    "tabcorp-cucumber-protractor-framework-v2": "^1.0.45"
+  }
+}
